@@ -4,7 +4,7 @@ const initialState = {
     searchField: ''
 }
 
-// First Reducer - Pure Function
+// First Reducer - Pure Function here
 //export function searchRobots(state= initialState , action){
  export const searchRobots = (state=initialState, action={}) => {
     switch(action.type){

@@ -31,9 +31,7 @@ class App extends Component {
       .then(response=> response.json())
       .then(users => {this.setState({ robots: users})});
   }
-
-
-  render() {
+   render() {
     const { robots } = this.state;
     const { searchField, onSearchChange } = this.props;
     const filteredRobots = robots.filter(robot =>{
